@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-*, html {
+*,
+html {
   margin: 0;
   padding: 0;
 }
@@ -18,7 +19,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   height: 100vh;
-  background-color: #E3E3E3;
+  background-color: #e3e3e3;
 }
 .nav-wrapper .header {
   display: flex;
@@ -90,7 +91,7 @@ p {
   font-size: 16px;
   font-family: "Lato";
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   background-color: #000;
   display: inline-flex;
   align-items: center;
@@ -101,53 +102,59 @@ p {
 
 .testimonials {
   display: block;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   white-space: nowrap;
-  overflow-y: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   -ms-overflow-style: none;
 }
 .testimonials::-webkit-scrollbar {
   display: none;
 }
-.testimonials__heading-wrapper {
+.testimonials__main {
   height: 280px;
   margin-top: 75px;
   display: inline-flex;
   align-items: center;
 }
-.testimonials__heading-wrapper .testimonials__heading {
+.testimonials__main .testimonials__heading {
   display: inline-flex;
   font-size: 40px;
   margin: 0 125px;
   font-family: "Playfair Display", serif;
 }
-.testimonials__heading-wrapper .testimonials__heading p {
+.testimonials__main .testimonials__heading p {
   margin: 0 40px;
 }
-.testimonials__heading-wrapper .testimonials__quote-box {
+.testimonials__main .testimonials__quote-box {
   width: 500px;
   height: 280px;
   border: 1px solid #000;
   margin-right: 65px;
 }
-.testimonials__heading-wrapper .testimonials__quote-box .testimonials__quote-innertext {
+.testimonials__main .testimonials__quote-box .testimonials__quote-innertext {
   white-space: normal;
   font-family: "Lato";
   font-size: 16px;
   line-height: 135%;
   padding: 70px 70px;
 }
-.testimonials__heading-wrapper .testimonials__quote-box .testimonials__svg {
-  position: absolute;
-}
-.testimonials__heading-wrapper .testimonials__quote-box .testimonials__svg > img {
+.testimonials__main .testimonials__quote-box > img {
   position: relative;
   left: 360px;
   bottom: 120px;
 }
-.testimonials .testimonials__navbar {
+
+.testimonials-navbar {
   height: 100px;
-  color: #F7F7F7;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-navbar__nav-arrows #arrow-right {
+  transform: rotate(180deg);
+  margin-left: 30px;
 }
 
 .offers .offers__heading {
